@@ -47,7 +47,7 @@ def save_to_gsheet(client, data):
         st.error("Spreadsheet 'Meeting Requests' not found. Please check the name and sharing settings.")
         return False
     except Exception as e:
-        st.error(f"Failed to save to Google Sheet: {e}")
+        st.error(f"Failed to save to Google Sheet probably because Ziad does not want to do this request. He is very tired you know. : {e}")
         return False
 
 
